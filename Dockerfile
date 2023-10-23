@@ -1,5 +1,5 @@
 # Pull official base image
-FROM node:17-alpine as build-deps
+FROM --platform=linux/amd64 node:17-alpine as build-deps
 
 # A directory within the virtualized Docker environment
 # Becomes more relevant when using Docker Compose later
